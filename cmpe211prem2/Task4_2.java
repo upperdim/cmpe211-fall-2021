@@ -31,17 +31,16 @@ public class Task4_2 {
 	}
 
 	public static int sumOfEnds(int num) {
-		public static int sumOfEnds(int num) {
-			String numStr = String.valueOf(Math.abs(num));
+		String numStr = String.valueOf(Math.abs(num));
 
-			if (numStr.length() < 2)
-				return -1; // error
+		if (numStr.length() < 2)
+			return -1; // error
 
-			int lastDigit  = Math.abs(num) % 10; // numStr.charAt(numStr.length() - 1) - '0';
-			int firstDigit = numStr.charAt(0) - '0';
+		int lastDigit  = Math.abs(num) % 10; // numStr.charAt(numStr.length() - 1) - '0';
+		int firstDigit = numStr.charAt(0) - '0';
 
-			return firstDigit + lastDigit;
-		}
+		return firstDigit + lastDigit;
 	}
+
 
 }
